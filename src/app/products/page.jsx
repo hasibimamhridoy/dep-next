@@ -12,18 +12,18 @@ export default async function ProductPage() {
   // const client = await dbConnect;
   // const data = await client.db.collection("practice_data").find({}).toArray();
 
-  // const data = await dbConnect("practice_data").find({}).toArray();
+  const data = await dbConnect("practice_data").find({}).toArray();
 
   // if (!data?.length) {
   //   // redirect("/"); // this is server component
   //   return <div>Loading...</div>;
   // }
 
-  const res = await fetch(`${NEXT_PUBLIC_SERVER_ADDRESS}/api/products`, {
-    cache: "force-cache",
-  });
-  const data = await res.json();
-  console.log("data", data);
+  // const res = await fetch(`${NEXT_PUBLIC_SERVER_ADDRESS}/api/products`, {
+  //   cache: "force-cache",
+  // });
+  // const data = await res.json();
+  // console.log("data", data);
 
   return (
     <ul className="text-center mt-8">
