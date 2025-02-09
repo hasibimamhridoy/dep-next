@@ -1,4 +1,3 @@
-import dbConnect from "@/lib/dbConnect";
 // import { redirect } from "next/navigation";
 
 // export const dynamic = "force-dynamic";
@@ -13,7 +12,7 @@ export default async function ProductPage() {
   // const client = await dbConnect;
   // const data = await client.db.collection("practice_data").find({}).toArray();
 
-  const data = await dbConnect("practice_data").find({}).toArray();
+  // const data = await dbConnect("practice_data").find({}).toArray();
 
   // if (!data?.length) {
   //   // redirect("/"); // this is server component
