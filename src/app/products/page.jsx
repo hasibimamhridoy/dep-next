@@ -1,5 +1,7 @@
 // import { redirect } from "next/navigation";
 
+import dbConnect from "@/lib/dbConnect";
+
 // export const dynamic = "force-dynamic";
 
 export default async function ProductPage() {
