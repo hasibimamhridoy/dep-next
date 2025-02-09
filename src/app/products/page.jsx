@@ -20,10 +20,10 @@ export default async function ProductPage() {
   //   return <div>Loading...</div>;
   // }
 
-  // const res = await fetch(`${NEXT_PUBLIC_SERVER_ADDRESS}/api/products`, {
-  //   cache: "force-cache",
-  // });
-  // const data = await res.json();
+  const res = await fetch(`${NEXT_PUBLIC_SERVER_ADDRESS}/api/products`, {
+    cache: "force-cache",
+  });
+  const data = await res.json();
   console.log("data", data);
 
   return (
